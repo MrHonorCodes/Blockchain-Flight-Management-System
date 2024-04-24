@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_flightPricingContract",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "seatClass",
+						"type": "uint256"
+					}
+				],
+				"name": "bookTicket",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentStatus",
+				"outputs": [
+					{
+						"internalType": "enum PlaneTicket.Statuses",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "flightNumber",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "flightPricingContract",
+				"outputs": [
+					{
+						"internalType": "contract FlightPricing",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ticketHolder",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PlaneTicket.sol": "PlaneTicket"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FlightPricing.sol": {
+			"keccak256": "0x67ff29aa3b3c82702cc6e01c78ee9a258653b89344b3578bec57c2233cd0a81f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8bb04497bab935de7dec4a5e42cf8d548c4cf6310cae2056063f86d543eff715",
+				"dweb:/ipfs/QmcpVgDSsJbXjPnBPPeETHD2x8D242ZDwFPUDKnuLREDvf"
+			]
+		},
+		"contracts/PlaneTicket.sol": {
+			"keccak256": "0x3c235580fd8fd6bcc2f941d297bb7214a650a8615bb09e191f98f926904ee8e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://55e324ef93e0e82f97dd46b485e82fec014ea9766c73c53bee8c354ae3232ab7",
+				"dweb:/ipfs/QmPagj9ws5EdVvJ5JJcRAEo47YXTpYfbXAa8KH6CMg1avP"
+			]
+		}
+	},
+	"version": 1
+}

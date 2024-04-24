@@ -1,0 +1,205 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_departureTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_arrivalTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_origin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_destination",
+						"type": "string"
+					}
+				],
+				"name": "addFlight",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "flights",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "flightNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "departureTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "arrivalTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "destination",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isScheduled",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					}
+				],
+				"name": "getFlightDetails",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "flightNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "departureTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "arrivalTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "origin",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "destination",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isScheduled",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct FlightSchedule.Flight",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isScheduled",
+						"type": "bool"
+					}
+				],
+				"name": "updateFlightStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FlightSchedule.sol": "FlightSchedule"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FlightSchedule.sol": {
+			"keccak256": "0x283c024a8df2206939a1d04328fcd8c8e2ce8faffb652ce4af0fdb84fe17d06b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://71fe5d2b5f22996da4adc0dc48d42401e9b76c5fbf440c0b81bcad72fec3a770",
+				"dweb:/ipfs/QmbioeGzq48BJQdCm7ob9m7LovKPxNGB8xf7qjKUxEeZZ6"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "flightPrices",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "economy",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "business",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "firstClass",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "seatClass",
+						"type": "uint256"
+					}
+				],
+				"name": "getFlightPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_flightNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_economy",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_business",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_firstClass",
+						"type": "uint256"
+					}
+				],
+				"name": "setFlightPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FlightPricing.sol": "FlightPricing"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FlightPricing.sol": {
+			"keccak256": "0xf417d229b8870f6f46462caf4daee4a5b18471c9697c671529be52f04b9f0a28",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b9e7f62306fd509a4630dd5d854913ec73c9c75d69b529c7fa8a9de7e4c9fc9",
+				"dweb:/ipfs/QmRAXLBH1mMzF7GFQphKFcpYX7WxEJxytZc5cGSSpAADVe"
+			]
+		}
+	},
+	"version": 1
+}
